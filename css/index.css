@@ -79,7 +79,6 @@ p, address, a {
 	max-width: 90%;
 	margin: 25px auto;
 	text-align: center;
-	box-sizing: border-box;
 }
 
 .top-bar {
@@ -88,10 +87,10 @@ p, address, a {
 	width: 90%;
 	/* added background color to the nav bar and fixed its position */
 	position: fixed;
-	background-color: rgb(173, 216, 230, 0.7);
+	background-color: rgb(255, 198, 198);
 	border-radius: 100px;
 	margin: 10px auto;
-	padding: 10px 5px;
+    padding: 10px 5px;
 }
 
 .logo {
@@ -104,7 +103,7 @@ p, address, a {
 	align-items: center;
     width: 100%;
 	margin-left: 25px;
-	margin-right: 5%;
+    margin-right: 5%;
 }
 
 .top-bar nav a {
@@ -132,10 +131,11 @@ p, address, a {
         padding: 10px 0px;
         background-color: transparent;
     }
-    .first {
+    .top-logo {
         order: 1;
+        padding-right: 0px;
     }
-    .under {
+    .nav-under {
         order: 2;
     }
     .top-bar nav {
@@ -147,8 +147,11 @@ p, address, a {
         font-size: 18px;
         padding: 5px;
         text-shadow: none;
-    
-        transition: .1s;
+
+        transition: .3s;
+    }
+    .top-bar nav a:hover {
+        color: blue;
     }
 }
 
@@ -181,6 +184,24 @@ p, address, a {
 
 .main-title button:hover {
 	transform: scale(1.2) rotate(-3deg);
+}
+
+/* tablet view - main header */
+@media (max-width:768px) {
+    .header-image-right {
+        display: none;
+    }
+    .opening-title {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    .main-title h1 {
+        font-size: 78px;
+        margin-right: 0px;
+    }
+    .main-title button {
+        margin-right: 0px;
+    }
 }
 
 .bottom-content {
