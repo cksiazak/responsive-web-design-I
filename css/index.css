@@ -87,7 +87,7 @@ p, address, a {
 	width: 90%;
 	/* added background color to the nav bar and fixed its position */
 	position: fixed;
-	background-color: rgb(255, 198, 198);
+	background-color: rgb(184, 184, 184);
 	border-radius: 100px;
 	margin: 10px auto;
     padding: 10px 5px;
@@ -108,10 +108,10 @@ p, address, a {
 
 .top-bar nav a {
 	text-decoration: none;
-	color: red;
+	color: rgb(48, 48, 48);
 	font-size: 18px;
 	padding: 5px;
-	text-shadow: 1px 1px black;
+	text-shadow: 1px 1px red;
 
 	transition: .1s;
 }
@@ -256,6 +256,18 @@ p, address, a {
 	width: 32%;
 	text-align: left;
 	font-size: 18px;
+}
+
+/* mobile view -- center content -----------------------*/
+@media (max-width: 600px) {
+	.top-two-columns, .middle-img, .three-bottom-columns {
+		flex-direction: column;
+		padding: 5px 0px;
+	}
+	.two-columns, .three-columns {
+		width: 100%;
+		padding: 20px 0px;
+	}
 }
 
 .contact-info {
