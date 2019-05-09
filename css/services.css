@@ -170,6 +170,14 @@ p, address, a {
 	padding-top: 75px;
 }
 
+/* tablet and mobile view of the middle section ----------------------------*/
+@media (max-width:900px){
+	.top-section{
+		padding-top: 0px;
+
+	}
+}
+
 .services-header-img {
 	width: 100%;
 	height: auto;
@@ -252,7 +260,26 @@ p, address, a {
 }
 
 .services-info-img {
-	height: auto;
+	width: auto;
+	height: 50%;
+	margin-left: 25px;
+}
+
+/* mmobile view of middle and bottom seciton */
+
+@media (max-width:600px){
+	.middle-services {
+		flex-direction: column;
+	}
+	.box-around {
+		width: 100%;
+	}
+	.services-info-img {
+		display: none;
+	}
+	.bottom-boxes {
+		width: 100%;
+	}
 }
 
 footer {
