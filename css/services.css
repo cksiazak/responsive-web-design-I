@@ -166,114 +166,127 @@ p, address, a {
 	}
 }
 
-.opening-title {
+.top-section {
+	padding-top: 75px;
+}
+
+/* tablet and mobile view of the middle section ----------------------------*/
+@media (max-width:900px){
+	.top-section{
+		padding-top: 0px;
+
+	}
+}
+
+.services-header-img {
 	width: 100%;
+	height: auto;
+}
+
+.about-services {
+	text-align: left;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 16px;
+}
+
+.about-services h1 {
+	font-size: 32px;
+}
+
+.middle-services {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 100px;
-	padding-bottom: 50px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 16px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 10px 0px;
 }
 
-.main-title h1 {
-	font-size: 78px;
-	margin-right: 50px;
+.middle-services h2 {
+	font-size: 18px;
 }
 
-.main-title button {
+.box-around {
+	width: 48%;
+	text-align: left;
+	padding: 25px;
 	border: 1px solid black;
-	margin-right: 50px;
-	padding: 5px 40px;
-  	font-size: 18px;
-	background-color: white;
-    text-align: center;
-    cursor: pointer;
+	margin: 20px 0px;
+	background-color: #F0F0F0;
+}
 
+.middle-services button {
+	border: 1px solid black;
+	padding: 5px 25px;
+	margin-top: 15px;
+  	font-size: 14px;
+	background-color: white;
+	text-align: center;
+	border-radius: 5px;
 	transition: .2s;
 }
 
-/* added animation on hover for the button */
+.middle-services button:hover {
+	transform: scale(1.1);
+} 
 
-.main-title button:hover {
-	transform: scale(1.2) rotate(-3deg);
-}
-
-/* tablet view - main header ----------------------------*/
-@media (max-width:900px) {
-    .header-image-right {
-        display: none;
-    }
-    .opening-title {
-        padding-top: 0px;
-        padding-bottom: 50px;
-    }
-    .main-title h1 {
-        font-size: 78px;
-        margin-right: 0px;
-    }
-    .main-title button {
-        margin-right: 0px;
-    }
-}
-
-.bottom-content {
-	width: 100%;
-	box-sizing: border-box;
-}
-
-.top-two-columns {
+.bottom-section {
 	display: flex;
 	justify-content: space-between;
-	border-top: 2px solid black;
-	padding: 25px 0px;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
+	padding-top: 30px;
 }
 
-.two-columns {
-	box-sizing: border-box;
+.service-facts {
 	text-align: left;
-	font-size: 18px;
-	width: 48%
+	font-size: 16px;
 }
 
-.middle-img {
-	width: 100%;
-}
-
-.three-bottom-columns {
-	display: flex;
-	justify-content: space-between;
-	border-bottom: 2px solid black;
-	padding: 25px 0px;
-	margin-top: 10px;
-	width: 100%;
-	align-content: left;
-}
-
-.three-columns {
-	width: 32%;
-	text-align: left;
+.service-facts h3 {
 	font-size: 18px;
 }
 
-/* mobile view -- center content -----------------------*/
-@media (max-width: 600px) {
-	.top-two-columns, .middle-img, .three-bottom-columns {
+.service-facts ul {
+	list-style: disc;
+	list-style-position: inside;
+	padding: 10px;
+	margin: 10px 0;
+	line-height: 200%;
+}
+
+.bottom-boxes {
+	width: 47%;
+}
+
+.services-info-img {
+	width: auto;
+	height: 50%;
+	margin-left: 25px;
+}
+/* tablet view for the bottom image ------------------------*/
+@media (max-width: 900px){
+	.services-info-img {
+		width: 50%;
+		height: 50%;
+	}
+}
+
+/* mmobile view of middle and bottom seciton --------------------*/
+
+@media (max-width:600px){
+	.middle-services {
 		flex-direction: column;
-		padding: 5px 0px;
 	}
-	.two-columns, .three-columns {
+	.box-around {
 		width: 100%;
-		padding: 20px 0px;
 	}
-}
-
-.contact-info {
-	text-align: left;
-	padding-top: 25px;
-	font-size: 18px;
+	.services-info-img {
+		display: none;
+	}
+	.bottom-boxes {
+		width: 100%;
+	}
 }
 
 footer {
