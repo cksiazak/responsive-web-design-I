@@ -264,8 +264,15 @@ p, address, a {
 	height: 50%;
 	margin-left: 25px;
 }
+/* tablet view for the bottom image ------------------------*/
+@media (max-width: 900px){
+	.services-info-img {
+		width: 50%;
+		height: 50%;
+	}
+}
 
-/* mmobile view of middle and bottom seciton */
+/* mmobile view of middle and bottom seciton --------------------*/
 
 @media (max-width:600px){
 	.middle-services {
